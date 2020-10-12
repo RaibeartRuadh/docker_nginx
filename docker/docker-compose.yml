@@ -1,0 +1,11 @@
+version: '2'
+services:
+    nginx:
+        build: ./nginx
+        container_name: nginx
+        ports:
+            - "80:80"
+        network_mode: host
+        volumes:
+            - /var/log/nginx:/var/log/nginx
+            - /opt/www/:/opt/www

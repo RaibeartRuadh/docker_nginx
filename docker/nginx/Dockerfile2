@@ -1,0 +1,6 @@
+FROM raibeartruadh/docker_nginx:latest
+WORKDIR /opt/docker/nginx/
+ADD params/nginx.conf /etc/nginx/nginx.conf
+
+
+
